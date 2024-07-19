@@ -31,7 +31,7 @@ pipeline {
         }
         stage('Build and Push Docker Image') {
             environment {
-                DOCKER_IMAGE = "mydockeruma/ultimate-cicd:${BUILD_NUMBER}"
+                DOCKER_IMAGE = "gowthamuppalapati/ultimate-cicd:${BUILD_NUMBER}"
                 // Add other environment variables if needed
             }
             steps {
